@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Denta Cad</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Denta Cad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white" aria-current="page" href="#"
+              >Home</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 border">
+          <h4 class="mb-2">Select your image</h4>
+          <form
+            action="/imagePredict"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <label for="mriph">Image to predict</label>
+            <input
+              type="file"
+              class="form-control"
+              name="img"
+              placeholder="image"
+            />
+            <input
+              type="submit"
+              value="Predict ..."
+              class="btn btn-danger w-100 mt-3"
+            />
+          </form>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- <img
+                src="./static/chart1.png"
+                alt="LOGO"
+                style="max-width: 100%"
+              /> -->
+            </div>
+            <div class="col-12 mt-5">
+              <!-- <img
+                src="./static/chart2.png"
+                alt="LOGO"
+                class="img-fluid"
+                style="max-width: 100%"
+              /> -->
+            </div>
+            <div class="col-6 col-md-6 mt-5">
+              <div class="d-flex justify-content-between gap-4">
+                <!-- <img
+                  src="./static/normal.webp"
+                  alt="LOGO"
+                  class="img-fluid"
+                  style="max-width: 100%"
+                />
+                <img
+                  src="./static/cancer.webp"
+                  alt="LOGO"
+                  class="img-fluid"
+                  style="max-width: 100%"
+                /> -->
+              </div>
+            </div>
+            <div class="col-12 col-md-6 w-100">
+              <div class="d-flex justify-content-between">
+                <!-- <h4 class="mx-5 w-100">Benign</h4>
+                <h4 class="w-100">Malignant</h4> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 border">
+          <h4 style="text-align: center">Denta Cad</h4>
+          <p>
+            Periodontal diseases are some of the most common diseases that
+            mankind faces. Periodontitis is the 6th most prevalent disease
+            worldwide. It leads to alveolar bone loss, tooth loss, edentulism,
+            and masticatory dysfunction, which indirectly affects nutrition.
+            Periodontitis also impairs quality of life and self-esteem, which
+            imposes huge socio-economic impacts and healthcare costs. In recent
+            years, Deep Learning (DL) architectures have gained popularity due
+            to their success in different computer vision and pattern
+            recognition tasks. We develop a Convolutional Network model that
+            involves multiple non-linear transformations of the data, with the
+            goal of yielding more abstract and ultimately more useful
+            representations. These methods are becoming increasingly popular,
+            often outperforming traditional approaches that include handcrafted
+            features for data representation and machine learning methods for
+            learning tasks. This has happened in the context of an unprecedented
+            growth of available digital data and powerful computational
+            resources. In DentaCad, we have developed an AI driven software
+            image processing tool to diagnose and monitor Periodontal
+            pathologies using ML and AI techniques on dental images (panoramic
+            radiograph). This is a clinical diagnostic tool to identify and
+            monitor Periodontal Disease using X-Ray images. The initial version
+            is developed using cutting edge research and applied Artificial
+            Intelligent (AI) and deep learning approach. The Machine learning
+            model was used to find the correlation between Panoramic X-Ray
+            images of patients with Periodontal disease. This is a fully
+            automated pipeline for detection of Periodontal disease on X-Ray
+            images. Fully convolutional Neural Network (CNN)was used to detect
+            the teeth, followed by a classifier to predict the Periodontal
+            disease . Currently we developed an initial model for detection of
+            periodontally compromised teeth on intraoral radiographs using
+            convolutional Neural Network.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
