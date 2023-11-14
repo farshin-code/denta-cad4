@@ -14,7 +14,7 @@ except:
     print("NO Model")
     pass
 
-modelPeriodontal = tf.keras.models.load_model("periodontalClassifier.h5")
+modelPeriodontal = tf.keras.models.load_model("PeriodontalClassifier.h5")
 
 
 def process(img):
